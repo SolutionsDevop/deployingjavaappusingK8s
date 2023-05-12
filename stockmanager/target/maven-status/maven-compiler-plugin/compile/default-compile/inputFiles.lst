@@ -1,0 +1,7 @@
+/home/alfason/k8s/deployingjavaappusingK8s/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/StockManagerApplication.java
+/home/alfason/k8s/deployingjavaappusingK8s/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/resources/StockResource.java
+/home/alfason/k8s/deployingjavaappusingK8s/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/model/Stock.java
+/home/alfason/k8s/deployingjavaappusingK8s/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/exceptions/StockNotFoundException.java
+/home/alfason/k8s/deployingjavaappusingK8s/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/repositories/StockRepository.java
+/home/alfason/k8s/deployingjavaappusingK8s/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/services/StockService.java
+/home/alfason/k8s/deployingjavaappusingK8s/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/config/DataGenerator.java

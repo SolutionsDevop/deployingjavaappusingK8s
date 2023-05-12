@@ -90,15 +90,15 @@ resource "aws_security_group" "proj-sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks =  ["10.0.1.0/24"]
+    cidr_blocks = ["10.0.1.0/24"]
   }
 
 
   ingress {
 
-    from_port = 6433
-    to_port = 6433
-    protocol = "tcp"
+    from_port   = 6433
+    to_port     = 6433
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
@@ -173,30 +173,30 @@ module "ec2_instance" {
   version = "~> 3.0"
 
   for_each = {
- 
-    "kubemaster" = { vm_size = "t2.medium", private_ips="10.0.1.10" }
-    
-    "kubeworker-1" = { vm_size = "t2.medium", private_ips="10.0.1.11" }
-    
-    "kubeworker-2" = { vm_size = "t2.medium", private_ips="10.0.1.12"}
 
-    "nfs-server" = { vm_size = "t2.micro", private_ips="10.0.1.13"}
+    "kubemaster" = { vm_size = "t2.medium", private_ips = "10.0.1.10" }
 
-    
+    "kubeworker-1" = { vm_size = "t2.medium", private_ips = "10.0.1.11" }
 
- 
+    "kubeworker-2" = { vm_size = "t2.medium", private_ips = "10.0.1.12" }
+
+    "nfs-server" = { vm_size = "t2.micro", private_ips = "10.0.1.13" }
+
+
+
+
   }
- 
-  name = each.key
-  ami                    = "ami-00874d747dde814fa"
-  instance_type          = each.value.vm_size
-  key_name               = "server"
-  monitoring             = true
-  private_ip             = each.value.private_ips
+
+  name                        = each.key
+  ami                         = "ami-00874d747dde814fa"
+  instance_type               = each.value.vm_size
+  key_name                    = "server"
+  monitoring                  = true
+  private_ip                  = each.value.private_ips
   subnet_id                   = aws_subnet.proj-subnet.id
   vpc_security_group_ids      = [aws_security_group.proj-sg.id]
   associate_public_ip_address = true
-  
+
 
   tags = {
     Terraform   = "true"
@@ -208,10 +208,10 @@ module "ec2_instance" {
 
 
 
-output print_public_ip {
+output "print_public_ip" {
 
   //value = "${module.ec2_instance}"
-  value = "${module.ec2_instance}"
+  value = module.ec2_instance
 }
- 
+
 

@@ -1,0 +1,9 @@
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/repo/ProductRepo.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/model/Product.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/services/dto/StockDTO.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/repo/StockRepo.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/ShopfrontApplication.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/resources/ProductResource.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/controllers/HomeController.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/services/dto/ProductDTO.java
+/home/alfason/k8s/deployingjavaappusingK8s/shopfront/src/main/java/uk/co/danielbryant/djshopping/shopfront/services/ProductService.java
