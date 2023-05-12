@@ -1,0 +1,9 @@
+.terraform/
+
+.terraform.lock.hcl
+
+terraform*
+
+server.pem
+
+.git/
